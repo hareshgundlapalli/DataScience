@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 
+#Sample data file -> AZRB_Sample.csv
+
 merch = pd.read_csv('D:\\DataScience Projects\\Datasets\\AZRB.csv')
 
 merchformatted = merch.drop(len(merch) - 1,axis=0) # Clear Null row at the bottom and assign it to a new DF.
@@ -16,3 +18,4 @@ for i in range(len(merchformatted)):
 merchformatted.SALESAMT = pd.to_numeric(merchformatted.SALESAMT) # Format SALESAMT column to numeric.    
 
 # merchformatted.drop("SALESAMT",1,inplace=True) #Drop column
+
