@@ -15,4 +15,4 @@ for i in range(len(merchformatted)):
     
 merchformatted.SALESAMT = pd.to_numeric(merchformatted.SALESAMT) # Format SALESAMT column to numeric.    
 
-# merchformatted.drop("SALESAMT",1,inplace=True)
+# merchformatted.drop("SALESAMT",1,inplace=True) #Drop column
