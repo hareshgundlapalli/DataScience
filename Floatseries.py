@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 
-#Sample data file -> AZRB_Sample.csv
+#Sample data file -> hareshgundlapalli/DataScience/AZRB_Sample.csv
 
-merch = pd.read_csv('D:\\DataScience Projects\\Datasets\\AZRB.csv')
+merch = pd.read_csv('D:\\Datasets\\AZRB.csv')
 
 merchformatted = merch.drop(len(merch) - 1,axis=0) # Clear Null row at the bottom and assign it to a new DF.
 merchformatted.columns = ["ORG", "ACCTNO", "STORENO", "STORENAME", "MERCHNO", "SALESAMT", "SALESCOUNT"]
