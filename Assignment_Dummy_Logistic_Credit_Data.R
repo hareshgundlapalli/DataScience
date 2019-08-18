@@ -6,6 +6,8 @@
 #Create Dummy variables - for all categorical variables in the dataframe.
 #Delete original, non inclusive dummy variables
 
+#Pending: Correcting custom function for data cleanup when variable is supplied, data correlation between variables.
+
 #to get mode of a factor variable
 getmode <- function(v) {
   temp <- table(as.vector(v)) #as.vector converts nXn matrix to a vector and table creates the counts for each unique values in the list
