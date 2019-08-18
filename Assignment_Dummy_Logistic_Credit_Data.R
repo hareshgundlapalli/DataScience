@@ -1,6 +1,10 @@
 # Assignment on Logistic Regression - Dummy Variables
 # Created on 08/18/2019
 # Purpose: Create Dummy variables on categorical variable and perform EDA
+#For Credit Data worksheet,
+#Cleans Data - Checks for Nulls and NA and fills them with Mode / Mean of the variable depending on its type.
+#Create Dummy variables - for all categorical variables in the dataframe.
+#Delete original, non inclusive dummy variables
 
 #to get mode of a factor variable
 getmode <- function(v) {
